@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const getLatestAnime = async () => {
     try {
-        const response = await axios.get("https://anime-ivory-mu.vercel.app//api/home");
+        const response = await axios.get("https://anime-ivory-mu.vercel.app/api/home");
         return response.data;
     } catch (error) {
         return error.message;
@@ -29,7 +29,7 @@ export const getAnimeNewsDetail = async (id) => {
 
 export const getEpisodeDetails = async (slug) => {
     try {
-        const response = await axios.get(`https://anime-ivory-mu.vercel.app//api/episode/${slug}`);
+        const response = await axios.get(`https://anime-ivory-mu.vercel.app/api/episode/${slug}`);
         return response.data;
     } catch (error) {
         return error.message;
@@ -38,7 +38,7 @@ export const getEpisodeDetails = async (slug) => {
 
 export const getAnimeDetails = async (slug) => {
     try {
-        const response = await axios.get(`https://anime-ivory-mu.vercel.app//api/anime/${slug}`);
+        const response = await axios.get(`https://anime-ivory-mu.vercel.app/api/anime/${slug}`);
         return response.data;
     } catch (error) {
         return error.message;
@@ -56,7 +56,7 @@ export const getSearchResult = async (value) => {
 
 export const getCompletedAnime = async (page) => {
     try {
-        const response = await axios.get(`https://anime-ivory-mu.vercel.app//api/completed/page/${page}`);
+        const response = await axios.get(`https://anime-ivory-mu.vercel.app/api/completed/page/${page}`);
         return response.data
     } catch (error) {
         return error.message;
@@ -65,7 +65,7 @@ export const getCompletedAnime = async (page) => {
 
 export const getOngoingAnime = async (page) => {
     try {
-        const response = await axios.get(`https://anime-ivory-mu.vercel.app//api/ongoing/page/${page}`);
+        const response = await axios.get(`https://anime-ivory-mu.vercel.app/api/ongoing/page/${page}`);
         return response.data
     } catch (error) {
         return error.message;
