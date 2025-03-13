@@ -11,7 +11,7 @@ export const getLatestAnime = async () => {
 
 export const getAnimeNews = async () => {
     try {
-        const response = await axios.get("https://consumet-api-pink.vercel.app/news/ann/recent-feeds");
+        const response = await axios.get("https://otakudesu.cloud/news/ann/recent-feeds");
         return response.data;
     } catch (error) {
         return error.message;
@@ -20,7 +20,7 @@ export const getAnimeNews = async () => {
 
 export const getAnimeNewsDetail = async (id) => {
     try {
-        const response = await axios.get("https://consumet-api-pink.vercel.app/news/ann/info?id=" + id);
+        const response = await axios.get("https://otakudesu.cloud/news/ann/info?id=" + id);
         return response.data;
     } catch (error) {
         return error.message;
