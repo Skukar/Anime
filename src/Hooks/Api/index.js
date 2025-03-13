@@ -29,7 +29,7 @@ export const getAnimeNewsDetail = async (id) => {
 
 export const getEpisodeDetails = async (slug) => {
     try {
-        const response = await axios.get(`https://anime-ivory-mu.vercel.app/api/episode/${slug}`);
+        const response = await axios.get(`https://otakudesu.cloud/api/episode/${slug}`);
         return response.data;
     } catch (error) {
         return error.message;
@@ -38,7 +38,7 @@ export const getEpisodeDetails = async (slug) => {
 
 export const getAnimeDetails = async (slug) => {
     try {
-        const response = await axios.get(`https://anime-ivory-mu.vercel.app/api/anime/${slug}`);
+        const response = await axios.get(`https://otakudesu.cloud/api/anime/${slug}`);
         return response.data;
     } catch (error) {
         return error.message;
@@ -47,7 +47,7 @@ export const getAnimeDetails = async (slug) => {
 
 export const getSearchResult = async (value) => {
     try {
-        const response = await axios.get(`https://anime-ivory-mu.vercel.app/api/search/${value}`);
+        const response = await axios.get(`https://otakudesu.cloud/api/search/${value}`);
         return response.data
     } catch (error) {
         return error.message;
